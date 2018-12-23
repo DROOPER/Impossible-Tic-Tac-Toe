@@ -140,6 +140,42 @@ if ((pos[0][2]==0) && (pos[1][1]==0) && (pos[2][0]==0)) {winner=1;}
 while((winner==0)&&(oo!=1))
 {
   n=rand()%10+1;
+
+ if ((p[1]=='O') && (p[2]=='O') && (isdigit(p[3]))) {p[3]='O';break;}
+ if ((p[2]=='O') && (p[3]=='O') && (isdigit(p[1]))) {p[1]='O';break;}
+ if ((p[3]=='O') && (p[1]=='O') && (isdigit(p[2]))) {p[2]='O';break;}
+
+ if ((p[4]=='O') && (p[5]=='O') && (isdigit(p[6]))) {p[6]='O';break;}
+ if ((p[4]=='O') && (p[6]=='O') && (isdigit(p[5]))) {p[5]='O';break;}
+ if ((p[5]=='O') && (p[6]=='O') && (isdigit(p[4]))) {p[4]='O';break;}
+
+ if ((p[7]=='O') && (p[8]=='O') && (isdigit(p[9]))) {p[9]='O';break;}
+ if ((p[8]=='O') && (p[9]=='O') && (isdigit(p[7]))) {p[7]='O';break;}
+ if ((p[7]=='O') && (p[9]=='O') && (isdigit(p[8]))) {p[8]='O';break;}
+
+ if ((p[1]=='O') && (p[5]=='O') && (isdigit(p[9]))) {p[9]='O';break;}
+ if ((p[1]=='O') && (p[9]=='O') && (isdigit(p[5]))) {p[5]='O';break;}
+ if ((p[5]=='O') && (p[9]=='O') && (isdigit(p[1]))) {p[1]='O';break;}
+
+ if ((p[3]=='O') && (p[5]=='O') && (isdigit(p[7]))) {p[7]='O';break;}
+ if ((p[3]=='O') && (p[7]=='O') && (isdigit(p[5]))) {p[5]='O';break;}
+ if ((p[5]=='O') && (p[7]=='O') && (isdigit(p[3]))) {p[3]='O';break;}
+
+ if ((p[1]=='O') && (p[4]=='O') && (isdigit(p[7]))) {p[7]='O';break;}
+ if ((p[1]=='O') && (p[7]=='O') && (isdigit(p[4]))) {p[4]='O';break;}
+ if ((p[7]=='O') && (p[4]=='O') && (isdigit(p[1]))) {p[1]='O';break;}
+
+ if ((p[2]=='O') && (p[5]=='O') && (isdigit(p[8]))) {p[8]='O';break;}
+ if ((p[5]=='O') && (p[8]=='O') && (isdigit(p[2]))) {p[2]='O';break;}
+ if ((p[8]=='O') && (p[2]=='O') && (isdigit(p[5]))) {p[5]='O';break;}
+
+ if ((p[3]=='O') && (p[6]=='O') && (isdigit(p[9]))) {p[9]='O';break;}
+ if ((p[6]=='O') && (p[9]=='O') && (isdigit(p[3]))) {p[3]='O';break;}
+ if ((p[3]=='O') && (p[9]=='O') && (isdigit(p[6]))) {p[6]='O';break;}
+
+
+
+
  if ((p[1]=='X') && (p[2]=='X') && (isdigit(p[3]))) {p[3]='O';break;}
  if ((p[2]=='X') && (p[3]=='X') && (isdigit(p[1]))) {p[1]='O';break;}
  if ((p[3]=='X') && (p[1]=='X') && (isdigit(p[2]))) {p[2]='O';break;}

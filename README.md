@@ -1,3 +1,3 @@
 # Impossible-Tic-Tac-Toe
 
-![Screenshot][Preview.png]
+![Screenshot](Preview.png)
